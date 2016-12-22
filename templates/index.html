@@ -5,10 +5,20 @@
     <title>Главная</title>
 </head>
 <body>
-Hello, {{ user }}!
-<a href="/register">Регистрация</a>
 {% if user.is_authenticated %}
+    Hello, {{ user }}!
     <a href="/logout">Выход</a>
+    <a href="/create_record_page">Создать запись</a>
+{% else %}
+    <a href="/register">Регистрация</a>
+    <a href="/login">Вход</a>
 {% endif %}
+{% for record in records %}
+    <h1>{{ record.title }}</h1>
+    <h6>{{ record.created_date }}</h6>
+    <p>{{ record.text }}</p>
+    <hr>
+{% endfor %}
+
 </body>
 </html>
