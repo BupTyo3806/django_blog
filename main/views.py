@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from .forms import RecordForm
 from .models import Record
 from datetime import datetime
+from django.http import HttpResponseRedirect
 
 
 def index(request):
@@ -9,17 +10,15 @@ def index(request):
     return render(request, "index.html", {"records": records})
 
 
-def create_record_page(request):
-    return render(request, "create_record.html")
-
-
-def create_record(request):
+def record_new(request):
     if request.method == "POST":
-        title = request.POST.get("title")
-        text = request.POST.get("text")
-        if (title != "" and text != ""):
-            record = Record.create(request.user, title, text, datetime.now())
+        form = RecordForm(request.POST)
+        if form.is_valid():
+            record = form.save(commit=False)
+            record.author = request.user
+            record.created_date = datetime.now()
             record.save()
             return HttpResponseRedirect("/")
-
-    return render(request, "create_record.html")
+    else:
+        form = RecordForm()
+    return render(request, "new_record.html", {"form": form})
