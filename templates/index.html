@@ -1,26 +1,10 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная</title>
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-</head>
-<body>
-{% if user.is_authenticated %}
-    Hello, {{ user }}!
-    <a href="/logout">Выход</a>
-    <a href="/record/new">Создать запись</a>
-{% else %}
-    <a href="/register">Регистрация</a>
-    <a href="/login">Вход</a>
-{% endif %}
-{% for record in records %}
-    <h1>{{ record.title }}</h1>
-    <h6>{{ record.created_date }}</h6>
-    <p>{{ record.text }}</p>
-    <hr>
-{% endfor %}
+{% extends 'base/main.html' %}
+{% block title %}
+    Главная
+{% endblock %}
+{% block post %}
+    {% for record in records %}
+        {% include 'base/records.html' %}
+    {% endfor %}
+{% endblock %}
 
-</body>
-</html>
