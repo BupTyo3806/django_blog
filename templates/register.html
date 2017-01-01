@@ -1,14 +1,29 @@
+{% load static %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Регистрация</title>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/sign.css' %}" rel="stylesheet">
 </head>
+
 <body>
-<form action="" method="post">
-    {% csrf_token %}
-    <!-- as_p для того, чтобы каждый элемент формы был с новой строки -->
-    {{ form.as_p }}
-    <button type="submit">Зарегистрироваться</button>
-</form>
+
+<div class="container">
+
+    <form class="form-signin" method="post">
+        {% csrf_token %}
+        <h2 class="form-signin-heading">Регистрация</h2>
+        <label for="{{ form.username.auto_id }}">Имя пользователя</label>
+        {{ form.username|add_class:'form-control' }}
+        <label for="{{ form.password1.auto_id }}">Пароль</label>
+        {{ form.password1|add_class:'form-control' }}
+        <label for="{{ form.password2.auto_id }}">Повторите пароль</label>
+        {{ form.password2|add_class:'form-control' }}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Вход</button>
+    </form>
+
+</div>
 </body>
 </html>

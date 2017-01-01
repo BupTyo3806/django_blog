@@ -2,9 +2,16 @@
 {% block title %}
     Главная
 {% endblock %}
-{% block post %}
-    {% for record in records %}
-        {% include 'base/records.html' %}
-    {% endfor %}
+{% block content %}
+    <div class="blog-header">
+        <h1 class="blog-title">Django Blog</h1>
+        <p class="lead blog-description">Blog by Ivashin Aleksey</p>
+    </div>
+    <div class="row">
+        {% for record in records %}
+            {% include 'base/records.html' %}
+        {% endfor %}
+    </div>
 {% endblock %}
+
 

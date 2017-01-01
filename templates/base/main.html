@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,7 @@
     {% endblock %}</title>
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="/">Главная</a>
             {% if user.is_authenticated %}
-                <a class="blog-nav-item active" href="/logout">Выход</a>
                 <a class="blog-nav-item active" href="/record/new">Создать запись</a>
+                <a class="blog-nav-item active" href="/logout">Выход из {{ user }}</a>
             {% else %}
                 <a class="blog-nav-item active" href="/register">Регистрация</a>
                 <a class="blog-nav-item active" href="/login">Вход</a>
@@ -32,15 +32,8 @@
 </div>
 
 <div class="container">
-    <div class="blog-header">
-        <h1 class="blog-title">{% block blog-title %}Django Blog{% endblock %}</h1>
-        <p class="lead blog-description">{% block blog-description %}Blog by Ivashin Aleksey{% endblock %}</p>
-    </div>
-    <div class="row">
-        {% block post %}
-
-        {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
 </div>
 
 <footer class="blog-footer">
