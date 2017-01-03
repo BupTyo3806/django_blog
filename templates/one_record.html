@@ -1,6 +1,6 @@
 {% extends 'base/main.html' %}
 {% block title %}
-    Главная
+    {{ record.title }}
 {% endblock %}
 {% block content %}
     <div class="blog-header">
@@ -8,10 +8,6 @@
         <p class="lead blog-description">Blog by Ivashin Aleksey</p>
     </div>
     <div class="row">
-        {% for record in records %}
-            {% include 'base/post.html' %}
-        {% endfor %}
+        {% include 'base/post.html' %}
     </div>
 {% endblock %}
-
-

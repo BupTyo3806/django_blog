@@ -1,11 +1,10 @@
 {% extends 'base/main.html' %}
 {% block title %}
-    Главная
+    {{ records.0.author }}
 {% endblock %}
 {% block content %}
     <div class="blog-header">
-        <h1 class="blog-title">Django Blog</h1>
-        <p class="lead blog-description">Blog by Ivashin Aleksey</p>
+        <h1 class="blog-title">{{ records.0.author }}'s Blog</h1>
     </div>
     <div class="row">
         {% for record in records %}

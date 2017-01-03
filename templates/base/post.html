@@ -1,0 +1,9 @@
+<div class="blog-post">
+    <a href="/record/{{ record.id }}" class="blog-post-title">{{ record.title }}</a>
+    <p class="blog-post-meta">{{ record.created_date }} by <a
+            href="/user/{{ record.author_id }}">{{ record.author }}</a>
+    </p>
+    {% autoescape off %}
+        {{ record.text }}
+    {% endautoescape %}
+</div><!-- /.blog-post -->
