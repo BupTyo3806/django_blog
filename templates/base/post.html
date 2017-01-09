@@ -2,6 +2,8 @@
     <a href="/record/{{ record.id }}" class="blog-post-title">{{ record.title }}</a>
     <p class="blog-post-meta">{{ record.created_date }} by <a
             href="/user/{{ record.author_id }}">{{ record.author }}</a>
+        <span class="glyphicon glyphicon-remove delete-record" aria-hidden="true" data-record-id="{{ record.id }}"
+        data-author-id="{{ record.author_id }}"></span>
     </p>
     {% autoescape off %}
         {{ record.text }}

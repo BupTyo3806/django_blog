@@ -46,5 +46,52 @@
 </footer>
 <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script>
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+    //------------------------------------------------------------------------
+    var user_id = {{ user.id }};
+    $(".delete-record").click(function () {
+        var obj = $(this);
+        var record_id = obj.data("record-id");
+        var author_id = obj.data("author-id");
+        if (user_id != author_id) {
+            alert("Вы не имеете права!");
+            return;
+        }
+        $.ajax({
+            type: 'DELETE',
+            url: '/record/' + record_id,
+            success: function () {
+                obj.parent().parent().remove();
+            }
+        });
+    })
+</script>
 </body>
 </html>
