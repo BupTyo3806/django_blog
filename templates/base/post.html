@@ -1,9 +1,9 @@
-<div class="blog-post">
-    <a href="/record/{{ record.id }}" class="blog-post-title">{{ record.title }}</a>
-    <p class="blog-post-meta">{{ record.created_date }} by <a
+<div class="post">
+    <a class="post-title" href="/record/{{ record.id }}">{{ record.title }}</a>
+    <p>{{ record.created_date }} by <a
             href="/user/{{ record.author_id }}">{{ record.author }}</a>
-        <span class="glyphicon glyphicon-remove delete-record" aria-hidden="true" data-record-id="{{ record.id }}"
-        data-author-id="{{ record.author_id }}"></span>
+        <a class="post-delete" data-record-id="{{ record.id }}"
+              data-author-id="{{ record.author_id }}">Удалить</a>
     </p>
     {% autoescape off %}
         {{ record.text }}

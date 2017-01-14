@@ -3,49 +3,32 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
     <title>{% block title %}
 
     {% endblock %}</title>
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
-
-<div class="blog-masthead">
-    <div class="container">
-        <nav class="blog-nav">
-            <a class="blog-nav-item active" href="/">Главная</a>
-            {% if user.is_authenticated %}
-                <a class="blog-nav-item active" href="/record/new">Создать запись</a>
-                <a class="blog-nav-item active" href="/user/{{ user.id }}">Мой блог</a>
-                <a class="blog-nav-item active" href="/logout">Выход из {{ user }}</a>
-            {% else %}
-                <a class="blog-nav-item active" href="/register">Регистрация</a>
-                <a class="blog-nav-item active" href="/login">Вход</a>
-            {% endif %}
-        </nav>
-    </div>
+<div class="container">
+    <nav>
+    <a href="/">Главная</a>
+    {% if user.is_authenticated %}
+        <a href="/record/new">Создать запись</a>
+        <a href="/user/{{ user.id }}">Мой блог</a>
+        <a href="/logout">Выход из {{ user }}</a>
+    {% else %}
+        <a href="/register">Регистрация</a>
+        <a href="/login">Вход</a>
+    {% endif %}
+</nav>
 </div>
-
 <div class="container">
     {% block content %}
     {% endblock %}
 </div>
-
-<footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
-            href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-        <a href="#">Back to top</a>
-    </p>
-</footer>
 <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
-<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 <script>
     function getCookie(name) {
         var cookieValue = null;
@@ -76,7 +59,7 @@
     });
     //------------------------------------------------------------------------
     var user_id = {{ user.id }};
-    $(".delete-record").click(function () {
+    $(".post-delete").click(function () {
         var obj = $(this);
         var record_id = obj.data("record-id");
         var author_id = obj.data("author-id");

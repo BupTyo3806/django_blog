@@ -1,40 +1,21 @@
 {% load static %}
-{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Аутентификация</title>
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/sign.css' %}" rel="stylesheet">
-    <style>
-        .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-
-        .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-    </style>
 </head>
-
 <body>
-
 <div class="container">
-
-    <form class="form-signin" method="post">
+    <form method="post">
         {% csrf_token %}
-        <h2 class="form-signin-heading">Аутентификация</h2>
-        <label for="{{ form.username.auto_id }}" class="sr-only">Имя пользователя</label>
-        {{ form.username|add_class:'form-control' }}
-        <label for="{{ form.password.auto_id }}" class="sr-only">Пароль</label>
-        {{ form.password|add_class:'form-control' }}
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Вход</button>
+        <h2>Аутентификация</h2>
+        <label for="{{ form.username.auto_id }}">Имя пользователя</label>
+        {{ form.username }}
+        <label for="{{ form.password.auto_id }}">Пароль</label>
+        {{ form.password }}
+        <button type="submit">Вход</button>
     </form>
-
 </div>
 </body>
 </html>

@@ -1,3 +1,44 @@
-form {
+body {
+    font-family: Consolas, sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #552008;
+    background-color: rgba(175, 65, 15, 0.38);
+    border-radius: 5px;
+}
+.blog-header .blog-title {
     margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.post {
+    margin-top: 40px;
+}
+
+.post .post-title {
+    text-decoration: none;
+    color: #552008;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.post .post-delete {
+    color: #6e6e6e;
+    font-style: italic;
 }

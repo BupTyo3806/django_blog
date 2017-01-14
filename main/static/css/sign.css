@@ -1,38 +1,39 @@
 body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #eee;
+    font-family: Consolas, sans-serif;
 }
 
-.form-signin {
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
+.container {
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-    margin-bottom: 10px;
-}
-
-.form-signin .checkbox {
-    font-weight: normal;
-}
-
-.form-signin .form-control {
-    position: relative;
-    height: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+form {
     padding: 10px;
-    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.10);
 }
 
-.form-signin .form-control:focus {
-    z-index: 2;
+label, input {
+    font-family: Consolas, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
-.form-signin input{
-    margin-bottom: 10px;
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    font-family: Consolas, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    color: #552008;
+    background-color: rgba(175, 65, 15, 0.38);
+    border-radius: 5px;
+    border-color: #552008;
 }
