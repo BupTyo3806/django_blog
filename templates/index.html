@@ -3,9 +3,36 @@
     Главная
 {% endblock %}
 {% block content %}
+    <style>
+        form {
+            width: 100%;
+            text-align: center;
+        }
+
+        form input {
+            font-family: Consolas, sans-serif;
+            padding: 5px;
+            width: 50%;
+        }
+
+        form button {
+            font-family: Consolas, sans-serif;
+            padding: 5px;
+            color: #552008;
+            background-color: rgba(175, 65, 15, 0.38);
+            border-radius: 5px;
+            border-color: #552008;
+        }
+    </style>
     <div class="blog-header">
         <h1 class="blog-title">Everything & Everywhere</h1>
     </div>
+    <form method="post" action="/record/search">
+        {% csrf_token %}
+        <label for="search">Поиск по постам</label>
+        <input id="search" type="search" name="search_text" value="{{ search_text }}">
+        <button type="submit">Найти</button>
+    </form>
     {% for record in records %}
         {% include 'base/post.html' %}
     {% endfor %}

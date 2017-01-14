@@ -46,3 +46,12 @@ def user_records(request, user_id):
     records = Record.objects.all().filter(author_id=user_id).order_by("-created_date")
     records = cut_text(records)
     return render(request, "user_records.html", {"records": records})
+
+def search_records(request):
+    search_text = request.POST.get("search_text", "")
+    if search_text == "":
+        return HttpResponseRedirect("/")
+    records = Record.objects.all().filter(text__icontains=search_text).order_by("-created_date")
+    records = cut_text(records)
+    return render(request, "index.html", {"records": records, "search_text": search_text})
+
