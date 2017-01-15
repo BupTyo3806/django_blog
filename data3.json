@@ -1,0 +1,339 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "main",
+      "model": "record"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "of34l7xqqjn96rdovw55h7g5dib54p0b",
+    "fields": {
+      "session_data": "N2RmYjJjNDA3MjAyYmZlZmUxM2I4ZjdhOWU5ZTVjNWJmM2YwN2FiZjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9oYXNoIjoiNTA3YWJhMjU0NTRlMDI1YTdiOTA5MGU2OGNlMDY3MTdhNDRmNGU1OSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+      "expire_date": "2017-01-28T16:28:31.547Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add record",
+      "content_type": 7,
+      "codename": "add_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change record",
+      "content_type": 7,
+      "codename": "change_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete record",
+      "content_type": 7,
+      "codename": "delete_record"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$lBgvBg8Cv0it$g16E6S2hAErOCch+YlvTCLVF+TiutyhxvyIVojcJz4Y=",
+      "last_login": "2016-12-22T20:44:03.462Z",
+      "is_superuser": true,
+      "username": "alekseyivashin806",
+      "first_name": "",
+      "last_name": "",
+      "email": "alekseyivashin806@yandex.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-12-18T17:13:19.911Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$hVSv9clhCG7t$sHru4LhmDMf7dOcyPbskFdsLE0j9TZF9eQE3RGviPng=",
+      "last_login": "2017-01-01T16:31:19.981Z",
+      "is_superuser": false,
+      "username": "DarthVaper",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-12-22T21:06:28.557Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$AdKbPgALC31b$qYD54DVulYtObeMI+IPwJG+F2A6jN6G/7slbYdJ6pKc=",
+      "last_login": "2017-01-14T16:28:31.535Z",
+      "is_superuser": false,
+      "username": "ChanSoup",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2017-01-03T14:55:56.809Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 6,
+    "fields": {
+      "author": 6,
+      "title": "Шесть причин считать Amazon самой крутой IT-компанией мира",
+      "text": "Сервисы и продукты Amazon не очень популярны в России: мы знаем, что там можно что-то купить (и скорее всего промучиться с доставкой) и что компания делает одни из лучших читалок электронных книг на рынке. Но этим дело не ограничивается. Amazon — гигантская корпорация, которая тестирует массу интересных вещей — от офлайновых магазинов без продавцов до «умных колонок» с искусственным интеллектом. «Медуза» рассказывает о шести причинах считать Amazon самой крутой IT-корпорацией мира.",
+      "created_date": "2016-11-15T13:21:00.238Z"
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 2,
+    "fields": {
+      "author": 6,
+      "title": "Алгоритм нахождения эквивалентных точек оси абсцисс функции многочлена",
+      "text": "Таким образом, мы нашли остальные два корня кубического уравнения путем решения квадратного уравнения. В общеизвестных кругах есть метод деления уголком, которые позволяет также понизить степень. Но он работает только при целочисленных коэффициентах (т.е. рациональные придется приводить к целым, а комплексные вообще не возможно).Также интересен тот факт, что из подобной формулы «эквивалентности» следуют условия (не)монотонности для многочлена n-ой степени. Сформировать его можно так:",
+      "created_date": "2017-01-01T00:01:37.238Z"
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 5,
+    "fields": {
+      "author": 5,
+      "title": "Шипулин опять проиграл финиш. Что на этот раз?",
+      "text": "Увы, приходится привыкать: Антон Шипулин опять (третий раз за 1,5 месяца) проиграл важный финиш, упустив бронзовую медаль в преследовании Рупольдинга.В рывке за бронзой с лидером сборной России разобрался 25-летний Михал Крчмарж. Для чеха это первый подиум в карьере, да и сезон пока складывается достойно – он закрепился около топ-10 Кубка мира, в команде нет никого сильнее.Если стереть из памяти последний километр, Шипулин провел великолепную гонку: бросок из третьего десятка, борьба за победу, внятная скорость, единственный промах (разумеется, на последнем рубеже) – все было в порядке. С финальной стойки Антон убегал третьим, имея 7 секунд запаса перед Крчмаржем.За 1,1 км до конца чех сумел немного приблизиться, но по движениям казалось, что его топливо на нуле – Антон запрыгнул в горку и на поворот куда резвее.",
+      "created_date": "2015-04-21T15:22:11.248Z"
+    }
+  }
+]
