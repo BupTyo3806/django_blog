@@ -1,0 +1,339 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "main",
+      "model": "record"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "of34l7xqqjn96rdovw55h7g5dib54p0b",
+    "fields": {
+      "session_data": "N2RmYjJjNDA3MjAyYmZlZmUxM2I4ZjdhOWU5ZTVjNWJmM2YwN2FiZjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9oYXNoIjoiNTA3YWJhMjU0NTRlMDI1YTdiOTA5MGU2OGNlMDY3MTdhNDRmNGU1OSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+      "expire_date": "2017-01-28T16:28:31.547Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add record",
+      "content_type": 7,
+      "codename": "add_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change record",
+      "content_type": 7,
+      "codename": "change_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete record",
+      "content_type": 7,
+      "codename": "delete_record"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$lBgvBg8Cv0it$g16E6S2hAErOCch+YlvTCLVF+TiutyhxvyIVojcJz4Y=",
+      "last_login": "2016-12-22T20:44:03.462Z",
+      "is_superuser": true,
+      "username": "alekseyivashin806",
+      "first_name": "",
+      "last_name": "",
+      "email": "alekseyivashin806@yandex.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-12-18T17:13:19.911Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password":"pbkdf2_sha256$30000$hVSv9clhCG7t$sHru4LhmDMf7dOcyPbskFdsLE0j9TZF9eQE3RGviPng=",
+      "last_login": "2017-01-01T16:31:19.981Z",
+      "is_superuser": false,
+      "username": "LeePace",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-12-22T21:06:28.557Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$AdKbPgALC31b$qYD54DVulYtObeMI+IPwJG+F2A6jN6G/7slbYdJ6pKc=",
+      "last_login": "2017-01-14T16:28:31.535Z",
+      "is_superuser": false,
+      "username": "KoalaMary",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2017-01-03T14:55:56.809Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 6,
+    "fields": {
+      "author": 5,
+      "title": "Тайная история Твин Пикс в дневниках и газетных вырезках",
+      "text": "В издательстве «Азбука» 18 января выходит книга Марка Фроста «Тайная история Твин Пикс». Книга написана сценаристом сериала «Твин Пикс» в жанре «датафикшн» — в нее включены вымышленные документы, газетные вырезки, страницы из дневников и записки, рассказывающие историю небольшого городка в штате Вашингтон, где 25 лет назад убили Лору Палмер.Повествование ведется с начала XIX века — еще до того, как был основан город, — до наших дней (в нынешнее время будет развиваться действие 3-го сезона, тоже снятого Дэвидом Линчем, — его премьера назначена на май 2017 года). Книга представляет собой досье, составленное неким архивистом, — оно было обнаружено в июле 2016-го на месте преступления, расследование которого доверяют агенту по особым поручениям ФБР (пометки агента можно найти на полях досье). Это дело как-то связано с преступлениями, произошедшими в Твин Пикс много лет назад, — их расследовал агент Дейл Купер.С разрешения издательства «Медуза» публикует фрагмент книги, рассказывающий о различных событиях, произошедших в окрестностях Твин Пикс на рубеже XIX—XX веков. Оказывается, в этих местах всегда творились странные дела. (Книга переведена на русский Александрой Питчер).",
+      "created_date": "2017-01-13T14:33:01.238Z"
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 2,
+    "fields": {
+      "author": 6,
+      "title": "Оптимизация производительности в React",
+      "text": "Оптимизация производительности в React\nВнутренне, React использует несколько продвинутых техник, сводящих к минимуму количество дорогостоящих операций DOM, необходимых для обновления пользовательского интерфейса. Для большинства приложений, использующих React, быстродействие получаемого интерфейса достаточно без дополнительных действий для оптимизации производительности. Тем не менее, есть несколько способов, с помощью которых вы можете ускорить ваше приложение React.\nИспользование окончательной (production) сборки\nЕсли вы тестируете производительность или испытываете проблемы с производительностью в вашем приложении React, убедитесь, что вы тестируете минифицированную окончательную (production) сборку: Для создания сборки приложения React, вам необходимо запустить npm run build и следовать дальнейшим инструкциям: Для однофайловых сборок мы предлагаем подготовленные для окончательной сборки версии React, имеющими расширение .min.js.Для сборщика Browserify, вам необходимо запустить сборку с параметром NODE_ENV=production.Для сборщика Webpack, вам необходимо добавить следующие плагины в конфигурационный файл окончательной сборки (production config):",
+      "created_date": "2016-12-23T00:55:37.238Z"
+    }
+  },
+  {
+    "model": "main.record",
+    "pk": 5,
+    "fields": {
+      "author": 5,
+      "title": "«Я бегаю чистым, и пусть все это знают». Русский, который побеждает без допинга",
+      "text": "Впервые за много лет в топовом зимнем виде у России появился флагман – не просто один из фаворитов, а лидер, успехи которого уже привычны. Да, есть, скажем, не проигрывающая Евгения Медведева, только фигурное катание – другая история. Со своими, странными, законами – но наработать на подозрения в использовании допинга там сложно.В лыжах, где в течение нескольких месяцев на дисквалификации напарываются оба действующих обладателя Кубка мира, запросто. Вот почему Устюгову важно кричать о собственной чистоте.Еще в начале Тура он запланировал победу ради отстраненных коллег – по итогам доклада Макларена сборная России потеряла (временно или нет) шестерку гонщиков, в том числе олимпийских призеров Сочи.Смелая реплика впечатлила не всех конкурентов, но в честности самого Устюгова не засомневался никто.",
+      "created_date": "2017-01-04T00:57:28.248Z"
+    }
+  }
+]

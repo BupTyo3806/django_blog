@@ -1,0 +1,46 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: rgba(45,180,132,0.47);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+nav a {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #0d4642;
+    background-color: rgba(28, 65, 57, 0.19);
+}
+.blog-header .blog-title {
+    display: none;
+}
+
+.post {
+    margin-top: 40px;
+}
+
+.post .post-title {
+    text-decoration: none;
+    color: #0d4642;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.post .post-delete {
+    color: rgb(100, 23, 34);
+    font-style: italic;
+}
