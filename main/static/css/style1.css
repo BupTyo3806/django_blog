@@ -1,0 +1,46 @@
+body {
+    font-family: "Arial Narrow", sans-serif !important;
+    font-size: 20px;
+}
+
+a {
+    color: #42931f;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+
+.blog-masthead {
+    background-color: rgba(165,255,155,0.44);
+}
+
+.blog-nav-item {
+    color: #6f6f6f;
+}
+
+.blog-nav-item:hover {
+    color: #0f0f0f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #0f0f0f;
+}
+
+h1 {
+    font-family: "Arial Narrow", sans-serif !important;
+}
+
+.blog-header {
+    display: none;
+}
+
+.blog-post-title {
+    font-family: "Arial Narrow", sans-serif !important;
+}
+
+form {
+    margin-top: 50px;
+}

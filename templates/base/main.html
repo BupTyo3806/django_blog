@@ -11,7 +11,7 @@
     {% endblock %}</title>
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -19,14 +19,14 @@
 <div class="blog-masthead">
     <div class="container">
         <nav class="blog-nav">
-            <a class="blog-nav-item active" href="/">Главная</a>
+            <a class="blog-nav-item" href="/">Главная</a>
             {% if user.is_authenticated %}
-                <a class="blog-nav-item active" href="/record/new">Создать запись</a>
-                <a class="blog-nav-item active" href="/user/{{ user.id }}">Мой блог</a>
-                <a class="blog-nav-item active" href="/logout">Выход из {{ user }}</a>
+                <a class="blog-nav-item" href="/record/new">Создать запись</a>
+                <a class="blog-nav-item" href="/user/{{ user.id }}">Мой блог</a>
+                <a class="blog-nav-item" href="/logout">Выход из {{ user }}</a>
             {% else %}
-                <a class="blog-nav-item active" href="/register">Регистрация</a>
-                <a class="blog-nav-item active" href="/login">Вход</a>
+                <a class="blog-nav-item" href="/register">Регистрация</a>
+                <a class="blog-nav-item" href="/login">Вход</a>
             {% endif %}
         </nav>
     </div>
@@ -36,14 +36,6 @@
     {% block content %}
     {% endblock %}
 </div>
-
-<footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
-            href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-        <a href="#">Back to top</a>
-    </p>
-</footer>
 <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 <script>

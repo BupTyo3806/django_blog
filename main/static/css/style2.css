@@ -1,0 +1,55 @@
+body {
+    font-family: "Comic Sans MS", sans-serif !important;
+    font-size: 20px;
+    background-color: rgba(255, 254, 35, 0.2);
+}
+
+a {
+    color: #a7a10d;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+
+.blog-masthead {
+    position: fixed;
+    background-color: rgba(255, 254, 35, 0.25);
+    border-bottom-right-radius: 10px;
+}
+
+.blog-masthead .container {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.blog-nav-item {
+    color: #0e0e0e;
+}
+
+.blog-nav-item:hover {
+    color: #0f0f0f;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #0f0f0f;
+}
+
+h1 {
+    font-family: "Comic Sans MS", sans-serif !important;
+}
+
+.blog-header {
+    display: none;
+}
+
+.blog-post-title {
+    font-family: "Comic Sans MS", sans-serif !important;
+}
+
+form {
+    margin-top: 50px;
+}
